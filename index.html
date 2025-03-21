@@ -28,7 +28,7 @@
 
   <body>
     <!-- ========Header Start======= -->
-    <header class="bg-white">
+    <header class="bg-white sticky-top shadow">
       <div class="container-fluid d-lg-block d-none">
         <!-- Navigation Header -->
         <div class="row navigation-header">
@@ -37,24 +37,24 @@
               <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html"
-                    ><img src="assets/logo" width="100%" alt="logo"
+                    ><img src="assets/logo.png" width="200px" alt="logo"
                   /></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">ABOUT</a>
+                  <a class="nav-link" href="About.html">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">SERVICES</a>
+                  <a class="nav-link" href="Service.html">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">GALLERY</a>
+                  <a class="nav-link" href="Gallery.html">GALLERY</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">CONTACTS</a>
+                  <a class="nav-link" href="Contact.html">CONTACTS</a>
                 </li>
               </ul>
             </div>
@@ -63,11 +63,11 @@
       </div>
       <!-- ---------Mobile Header------- -->
       <div
-        class="container-fluid p-4 d-lg-none d-block bg-white sticky-top shadow"
+        class="container-fluid p-2 d-lg-none d-block bg-white sticky-top shadow"
       >
         <div class="row align-items-center">
           <div class="col-8">
-            <div><img src="assets/logos.png" alt="logo" width="100%" /></div>
+            <div><img src="assets/logo.png" alt="logo" width="200px" /></div>
           </div>
           <div class="col-4">
             <div class="text-end mobile-menuicon">
@@ -81,10 +81,10 @@
         <div class="close-menu">&times;</div>
         <ul>
           <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="Network.html">SERVICES</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="contact.html">CONTACTS</a></li>
+          <li><a href="About.html">ABOUT</a></li>
+          <li><a href="Service.html">SERVICES</a></li>
+          <li><a href="Gallery.html">GALLERY</a></li>
+          <li><a href="Contact.html">CONTACTS</a></li>
         </ul>
       </div>
     </header>
@@ -97,16 +97,16 @@
             <li class="splide__slide hero-slider">
               <div class="content">
                 <h2>Quality Heating & Air Condition Services</h2>
-                <a href="" class="contact-btn">Contact Us</a>
+                <a href="Contact.html" class="contact-btn">Contact Us</a>
               </div>
               <img src="assets/banner-1.jpg" alt="Image 1" />
             </li>
             <li class="splide__slide hero-slider">
               <div class="content">
                 <h2>Quality Heating & Air Condition Services</h2>
-                <a href="" class="contact-btn">Contact Us</a>
+                <a href="Contact.html" class="contact-btn">Contact Us</a>
               </div>
-              <img src="assets/banner-1.jpg" alt="Image 2" />
+              <img src="assets/ac.jpg" alt="Image 2" />
             </li>
           </ul>
         </div>
@@ -114,80 +114,182 @@
     </div>
     <!-- ========Hero-Section-End======= -->
     <!-- ========Points-Section-Start======= -->
-    <div class="container-fluid p-100" style="background-color: #122a48">
-      <div class="row align-items-center">
-        <div class="col-lg-4 mt-4">
-          <div class="row">
-            <div class="col-4">
-              <div class="d-flex justify-content-end">
-                <div class="point-icon-container">
-                  <img src="assets/air-conditioner.png" width="40px" alt="" />
+    <div class="container-fluid p-100">
+        <div class="row ">
+            <div class="col-lg-6 form-container-hero p-4">
+                <div class="mt-4 mt-lg-0">
+                  <h2
+                    class="fw-bold text-center text-lg-start text-uppercase "
+                  >
+                    Make an Appoinment
+                  </h2>
+                  <p class="text-center text-lg-start">
+                    Just fill out the following form, our expert team will contact and
+                    make sure you
+                  </p>
+                  <p class="text-center text-lg-start">
+                    get the highest level of help.
+                  </p>
+                  <form action="send.php" method="post">
+                    <div class="row">
+                      <div class="form-group col-md-6 mb-3">
+                        <label class="" for="">Full Name:</label>
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          placeholder="Your Name"
+                        />
+                      </div>
+                      <div class="form-group col-md-6 mb-3">
+                        <label class="" for="">Email Address:</label>
+                        <input
+                          type="email"
+                          name="email"
+                          class="form-control"
+                          placeholder="Enter Email"
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col-md-6 mb-3">
+                        <label class="" for="">Subject:</label>
+                        <input
+                          type="text"
+                          name="subject"
+                          class="form-control"
+                          placeholder="Subject"
+                        />
+                      </div>
+                      <div class="form-group col-md-6 mb-3">
+                        <label class="" for="">Phone Numbers:</label>
+                        <input
+                          type="text"
+                          name="phone"
+                          class="form-control"
+                          placeholder="Phone"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label class="" for="">Your Message:</label>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="5"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button
+                        type="submit"
+                        name="submit"
+                        value="submit"
+                        class="form_btn-hero"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </div>
-            <div class="col-8">
-              <div class="point-content">
-                <h5 class="fw-bold">Fast and Reliable Service</h5>
-                <p>
-                  We provide quick, efficient, and dependable AC repair and
-                  installation services, ensuring your comfort.
-                </p>
+              <div class="col-lg-6" style="background-color: #122a48">
+                <div class="row">
+                    <div class="col-lg-12 mt-4">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="d-flex justify-content-end">
+                            <div class="point-icon-container">
+                              <img src="assets/air-conditioner.png" width="40px" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <div class="point-content">
+                            <h5 class="fw-bold">Fast and Reliable Service</h5>
+                            <p>
+                              We provide quick, efficient, and dependable AC repair and
+                              installation services, ensuring your comfort.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="d-flex justify-content-end">
+                            <div class="point-icon-container">
+                              <img src="assets/technician.png" width="40px" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <div class="point-content">
+                            <h5 class="fw-bold">Experienced Technicians</h5>
+                            <p>
+                              Our skilled and certified technicians deliver expert solutions
+                              using advanced tools and genuine spare parts.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="d-flex justify-content-end">
+                            <div class="point-icon-container">
+                              <img src="assets/reduce-cost.png" width="40px" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <div class="point-content">
+                            <h5 class="fw-bold">
+                                Affordable Cost</h5>
+                            <p>
+                                We offer high-quality AC services at affordable prices, ensuring you get excellent value for money.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="d-flex justify-content-end">
+                              <div class="point-icon-container">
+                                <img src="assets/24-hours-support.png" width="40px" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-9">
+                            <div class="point-content">
+                              <h5 class="fw-bold">24/7 Emergency Support</h5>
+                              <p>
+                                We offer round-the-clock emergency service, ensuring your AC
+                                issues are resolved without delay.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-4 mt-4">
-          <div class="row">
-            <div class="col-4">
-              <div class="d-flex justify-content-end">
-                <div class="point-icon-container">
-                  <img src="assets/technician.png" width="40px" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col-8">
-              <div class="point-content">
-                <h5 class="fw-bold">Experienced Technicians</h5>
-                <p>
-                  Our skilled and certified technicians deliver expert solutions
-                  using advanced tools and genuine spare parts.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-4">
-          <div class="row">
-            <div class="col-4">
-              <div class="d-flex justify-content-end">
-                <div class="point-icon-container">
-                  <img src="assets/24-hours-support.png" width="40px" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="col-8">
-              <div class="point-content">
-                <h5 class="fw-bold">24/7 Emergency Support</h5>
-                <p>
-                  We offer round-the-clock emergency service, ensuring your AC
-                  issues are resolved without delay.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    
     </div>
     <!-- ========Points-Section-End======= -->
     <!-- ========About-Section-Start======= -->
     <div class="container-fluid p-100">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-1 order-lg-0">
           <div>
             <img src="assets/abt.png" width="100%" alt="" />
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-0 order-lg-1">
           <div class="mt-4 mt-lg-0">
             <h6 class="main-topic">About Us</h6>
             <h1 class="fw-bold titile-2">
@@ -249,7 +351,7 @@
       <div class="row">
         <div class="col-lg-4 mt-4">
           <div class="service-card">
-            <img src="assets/bg3.jpg" width="100%" alt="" />
+            <img src="assets/ser-1.jpg" width="100%" alt="" />
             <div class="my-4 text-white">
               <h4 class="fw-bold">Lpg copper line installation</h4>
               <p>
@@ -264,7 +366,7 @@
         </div>
         <div class="col-lg-4 mt-4">
           <div class="service-card">
-            <img src="assets/bg3.jpg" width="100%" alt="" />
+            <img src="assets/ser-2.jpg" width="100%" alt="" />
             <div class="my-4 text-white">
               <h4 class="fw-bold">Window ac installation Service Repair</h4>
               <p>
@@ -292,7 +394,7 @@
         </div>
         <div class="col-lg-4 mt-4">
           <div class="service-card">
-            <img src="assets/bg3.jpg" width="100%" alt="" />
+            <img src="assets/ser-3.jpg" width="100%" alt="" />
             <div class="my-4 text-white">
               <h4 class="fw-bold">Compressor change all type ac</h4>
               <p>
@@ -304,7 +406,7 @@
         </div>
         <div class="col-lg-4 mt-4">
           <div class="service-card">
-            <img src="assets/bg3.jpg" width="100%" alt="" />
+            <img src="assets/ser-5.jpg" width="100%" alt="" />
             <div class="my-4 text-white">
               <h4 class="fw-bold">Ac copper pipe installation</h4>
               <p>
@@ -316,7 +418,7 @@
         </div>
         <div class="col-lg-4 mt-4">
           <div class="service-card">
-            <img src="assets/bg3.jpg" width="100%" alt="" />
+            <img src="assets/ser-4.jpg" width="100%" alt="" />
             <div class="my-4 text-white">
               <h4 class="fw-bold">Ac gas Refill</h4>
               <p>
@@ -478,31 +580,9 @@
     </div>
 
     <!--===Counter-Section-End===-->
-    <!--===Ac-Section-Start===-->
-    <div class="container-fluid ac-section p-4">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-lg-3 mt-4">
-          <div class="text-center">
-            <img src="assets/freezing.png" width="90px" alt="" />
-            <h5 class="text-white">Get the best air conditioning services</h5>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-4">
-          <div class="text-center">
-            <img src="assets/ac-object.png" width="50%" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-3 mt-4">
-          <div class="text-center">
-            <img src="assets/brightness.png" width="90px" alt="" />
-            <h5 class="text-white">Best repair and installation company</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--===Ac-Section-End===-->
+ 
     <!--===Testimonials-Section-Start===-->
-    <div class="conatiner-fluid p-100">
+    <div class="conatiner-fluid p-100 ">
       <div class="row">
         <h1 class="fw-bold titile-2 text-center">
           What They Are Talking <br />
@@ -602,6 +682,125 @@
       </div>
     </div>
     <!--===Testimonials-Section-End===-->
+       <!--===Ac-Section-Start===-->
+       <div class="container-fluid ac-section p-4">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-3 mt-4">
+            <div class="text-center">
+              <img src="assets/freezing.png" width="90px" alt="" />
+              <h5 class="text-white">Get the best air conditioning services</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <div class="text-center">
+              <img src="assets/ac-object.png" width="50%" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <div class="text-center">
+              <img src="assets/brightness.png" width="90px" alt="" />
+              <h5 class="text-white">Best repair and installation company</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--===Ac-Section-End===-->
+    <!--===Footer-Section-Start===-->
+    <footer class="footer-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-7">
+              <div class="f-box">
+                <div class="f-logo bg-white d-inline p-4">
+                  <img src="assets/logo.png" width="300px" alt="logo" />
+                </div>
+                <p>
+                    Bharat Ac Service Repair   is a trusted and professional air conditioner repair and maintenance service provider. We specialize in AC installation, repair, and regular servicing to ensure optimal performance of your cooling system.</p>
+                </p>
+                <ul class="social-link">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-5">
+              <div class="f-box">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li>
+                    <a href="index.html"><span>Home</span></a>
+                  </li>
+                  <li>
+                    <a href="About.html"><span>About</span></a>
+                  </li>
+                  <li>
+                    <a href="Gallery.html"><span>Gallery</span></a>
+                  </li>
+                  <li>
+                    <a href="Service.html"><span>Service</span></a>
+                  </li>
+                  <li>
+                    <a href="Contact.html"><span>Contact Us</span></a>
+                  </li>
+                  <li>
+                    <a href="pliocy.html"><span>Privacy Policy</span></a>
+                  </li>
+                  <li>
+                    <a href="terms.html"><span>Terms & Conditions</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="f-box">
+                <h4>Contact Info</h4>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i
+                    ><span class="text-white"
+                      ><b>Head Office : </b> H.No 35 Fazilpur Jharsa Gurgoan Sector-72 Fazilpur Near By Hanuman Mandir Pin Code - 122101</span
+                    >
+                  </li>
+  
+                  <li>
+                    <i class="fa-solid fa-phone"></i
+                    ><a href="tel:+91 9813958108">+91 9813958108</a>
+                  </li>
+               
+                  <li>
+                    <i class="fa-solid fa-envelope"></i
+                    ><a href="mailto:bharatacservice01@gmail.com"
+                      >bharatacservice01@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="copy-right">
+              <p>
+                © Copyright 2025 | Powered by Bharat Ac Service Repair. and
+                Designed By
+                <a href="https://standupstartups.com/">Standup Startups</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+   
+    <!--===Footer-Section-End===-->
     <!--===Whatsapp-Section-Start===-->
     <div class="what">
       <a
