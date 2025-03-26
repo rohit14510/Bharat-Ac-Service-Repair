@@ -26,7 +26,7 @@ $mail->Password = 'Standup@123';
 $mail->SMTPSecure = 'tls';
 $mail->Port     = 587;
 // Sender info 
-$mail->setFrom('info@madhavaircon.co.in', 'Bharat Ac Service Repair  '); 
+$mail->setFrom('info@madhavaircon.co.in', 'NCR Air Cool   '); 
 $mail->addReplyTo('info@madhavaircon.co.in', 'Test Email'); 
  
 // Add a recipient 
@@ -51,7 +51,7 @@ $mailContent = '
     <p>Subject :'.$subject.'</p> 
     <p>Message :'.$msg.'</p> 
     <p>Thanks and Regards</p>  
-    <p>Bharat Ac Service Repair  </p>';  
+    <p>NCR Air Cool   </p>';  
 // $mailContent = "Name : ".$name."\n"."Subject : ".$subject."\n"."Email : ".$email."\n"."Mbile : ".$mobile."\n"."Message :".$message; 
 $mail->Body = $mailContent; 
 $mail->headers  = "From: Sender Name <standupstartups1@gmail.com>" . "\r\n";
