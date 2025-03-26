@@ -26,11 +26,11 @@ $mail->Password = 'Standup@123';
 $mail->SMTPSecure = 'tls';
 $mail->Port     = 587;
 // Sender info 
-$mail->setFrom('info@madhavaircon.co.in', 'NCR Air Cool   '); 
-$mail->addReplyTo('info@madhavaircon.co.in', 'Test Email'); 
+$mail->setFrom('info@ncraircool.co.in', 'NCR Air Cool   '); 
+$mail->addReplyTo('info@ncraircool.co.in', 'Test Email'); 
  
 // Add a recipient 
-$mail->addAddress('rohitpancholi14510@gmail.com'); 
+$mail->addAddress('Ncraircool@gmail.com'); 
  
 // Add cc or bcc  
 // $mail->addCC('cc@example.com'); 
@@ -62,7 +62,7 @@ $mail->headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 if(!$mail->send()){ ?>
     <script>
     alert("Message could not be sent");
-    window.location.href="https://madhavaircon.co.in/thank-you.html";
+    window.location.href="https://ncraircool.co.in/thank-you.html";
     </script>
     // 
     <?php
@@ -74,7 +74,7 @@ if(!$mail->send()){ ?>
              
             //   if( $_GET['status'] == 'success') {
                 //  alert("Mail Send Successfully");
-                 window.location.href="https://madhavaircon.co.in/thank-you.html";
+                 window.location.href="https://ncraircool.co.in/thank-you.html";
             //   }
             //   else{
             //       echo 'alert("no good");';
